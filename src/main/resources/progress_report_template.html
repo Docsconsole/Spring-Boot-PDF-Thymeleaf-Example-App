@@ -1,0 +1,34 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<h3 style="text-align: left;color: white;background-color: #4da5a9;">Progress Report
+</h3>
+<h3 style="text-align: left ; color: white;background-color: #4da5a9;">School Name:
+    <span th:text="' ' + ${schoolName}  + ' '"></span>
+</h3>
+<h3 style="text-align: left; color: white;background-color: #4da5a9;">Student Name:
+    <span th:text="' ' + ${studentName} + ' '"></span>
+</h3>
+<h3 style="text-align: center; color: white;background-color: #4da5a9;">
+    <span th:text="'Class: ' + ${className}  + ' '"></span>
+</h3>
+
+<table class="table table-stripped" style="color: white;background-color: #4da5a9;width:100%;">
+    <thead >
+    <tr>
+        <td>First Language</td>
+        <td>Second Language</td>
+        <td>Mathematics</td>
+        <td>General Science</td>
+        <td>Social Studies</td>
+    </tr>
+    </thead>
+    <tr th:each="marks:${markLists}">
+        <td th:text="${marks.firstLang}">Id</td>
+        <td th:text="${marks.secondLang}">Name</td>
+        <td th:text="${marks.mathematics}">Department</td>
+        <td th:text="${marks.generalScience}">Updated By</td>
+        <td th:text="${marks.socialStudies}">Updated On</td>
+    </tr>
+</table>
+</body>
+</html>
