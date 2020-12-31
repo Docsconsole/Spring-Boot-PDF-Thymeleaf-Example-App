@@ -1,6 +1,6 @@
 package com.docsconsole.tutorials;
 
-import com.docsconsole.tutorials.servie.PdfReportGenService;
+import com.docsconsole.tutorials.service.PdfReportGenService;
 import com.lowagie.text.DocumentException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

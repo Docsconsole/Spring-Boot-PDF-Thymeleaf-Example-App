@@ -1,4 +1,4 @@
-package com.docsconsole.tutorials.servie;
+package com.docsconsole.tutorials.service;
 
 
 import com.docsconsole.tutorials.model.Marks;
